@@ -45,10 +45,6 @@ body {
     #header {
         @include banner('/assets/img/store/5.jpg');
     }
-
-    #reviews {
-        @include banner('/assets/img/store/1.jpg');
-    }
     
     strong {
         font-weight: bold;
