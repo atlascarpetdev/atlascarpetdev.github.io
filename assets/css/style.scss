@@ -1,0 +1,221 @@
+---
+---
+@import "vars", "reset", "mixins";
+
+::selection {
+    background: $brandColor;
+    color: $white;
+}
+
+::-moz-selection {
+    background: $brandColor;
+    color: $white;
+}
+
+html,
+body {
+    font: {
+        family: $sansSerif;
+        size: $baseMeasure;
+    }
+    line-height: 1.5;
+    background: $grayLight;;
+    color: $black;
+    letter-spacing: .02em;
+    
+    a {
+        color: $brandColor;
+        transition: color .3s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($brandColor,15%);
+        }
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    #header {
+        @include banner('/assets/img/store/5.jpg');
+    }
+
+    #reviews {
+        @include banner('/assets/img/store/1.jpg');
+    }
+    
+    strong {
+        font-weight: bold;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $grayMed;
+        margin: 0 0 $baseMeasure*.625;
+        width: 60%;
+
+        @media #{$mobiles} {
+            width: 100%;
+        }
+    }
+
+    table {
+        margin-bottom: $baseMeasure;
+
+        td {
+            padding-right: $baseMeasure/2;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+body {
+    padding: 0 0 $baseMeasure;
+}
+
+#main {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font: {
+            size: $baseMeasure;
+            weight: bold;
+        };
+        line-height: 1;
+        margin-bottom: $baseMeasure;
+    }
+
+    h1 {
+        font-size: $baseMeasure*6;
+    }
+    
+    h2 {
+        font-size: $baseMeasure*5;
+    }
+
+    h3 {
+        font-size: $baseMeasure*4;
+    }
+
+    h4 {
+        font-size: $baseMeasure*3;
+    }
+
+    h5 {
+        font-size: $baseMeasure*2;
+    }
+
+    
+    p {
+        margin: 0 0 $baseMeasure 0;
+    }
+
+    .iframeWrap {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+
+        iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    .storeMap {
+        border: 1px solid $grayMed;
+        border-radius: $borderRadiusBase;
+        margin-bottom: $baseMeasure;
+    }
+
+    blockquote {
+        font-style: italic;
+        padding-left: $baseMeasure;
+        border-left: 4px solid $brandColor;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: $baseMeasure*.625;
+
+        li {
+            margin-right: $baseMeasure*.75;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                width: 100%;
+                header: auto;
+                border-radius: $borderRadiusBase;
+                border: 1px solid $grayMed;
+            }
+        }
+    }
+
+    .button {
+        height: $baseMeasure*2.25;
+        line-height: $baseMeasure*2;
+        padding: 0 $baseMeasure;
+        background: $brandColor;
+        border-radius: $borderRadiusBase;
+        display: inline-block;
+        color: $white;
+        text-decoration: none;
+        transition: background-color .3s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken($brandColor,15%);
+        }
+    }
+    
+    #social {
+        display: flex;
+        flex-direction: row;
+        margin: {
+            bottom: $baseMeasure;
+            top: $baseMeasure;
+        };
+        
+        a {
+            outline: 0;
+            text-decoration: none;
+            margin-right: $baseMeasure;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        img {
+            width: $baseMeasure*1.5;
+            height: $baseMeasure*1.5;
+        }
+    }
+}

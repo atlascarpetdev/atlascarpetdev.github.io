@@ -1,5 +1,5 @@
 name: Atlas Carpet
-description: 
+description: High Quality Flooring at Discount Prices
 url:
 baseurl: ""
 permalink: /:title/
@@ -12,7 +12,7 @@ kramdown:
 sass:
   sass_dir: assets/partials
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
 exclude:
   - Gemfile

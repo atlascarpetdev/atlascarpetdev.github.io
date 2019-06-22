@@ -1,0 +1,18 @@
+// colors
+$brandColor: #f06127;
+$black: #000;
+$grayDark: #333;
+$grayMed: #ddd;
+$grayLight: #fefefe;
+$white: #fff;
+
+// fonts
+$sansSerif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// sizing
+$baseMeasure: 16px;
+$borderRadiusBase: 3px;
+
+// devices
+$mobile: 768px;
+$mobiles: 'screen and (max-width: #{$mobile})';

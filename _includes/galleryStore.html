@@ -1,0 +1,12 @@
+<h5>Store gallery</h5>
+<ul class="gallery">
+{% for image in site.static_files %}
+    {% if image.path contains '/assets/img/store-thumbs' %}
+        <li>
+            <a data-fslightbox="gallery" href="/assets/img/store/{{ image.name }}">
+                <img src="/assets/img/store-thumbs/{{ image.name }}" />
+            </a>
+        </li>
+    {% endif %}
+{% endfor %}
+</ul>
