@@ -1,6 +1,6 @@
 ---
 title: History
-image: 6.jpg
+image: 5.jpg
 order: 1
 layout: default
 permalink: /history.html

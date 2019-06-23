@@ -1,9 +1,12 @@
 <div class="headerWrap">
     <div class="header">
-        <div class="title">
-            {% if page.title != 'home' %}<a href="/">{% endif %}
-                {{ site.name }}
-            {% if page.title != 'home' %}</a>{% endif %}
+        <div>
+            <div class="title">
+                {% if page.title != 'home' %}<a href="/">{% endif %}
+                    {{ site.name }}
+                {% if page.title != 'home' %}</a>{% endif %}
+            </div>
+            <a href="tel:{{ site.contact.phone1 }}">{{ site.contact.phone1 }}</a>
         </div>
         {% include nav.html %}
     </div>

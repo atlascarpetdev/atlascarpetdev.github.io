@@ -67,6 +67,7 @@ body {
                     size: $baseMeasure*2;
                     weight: bold;
                 }
+                line-height: $baseMeasure*2.5;
 
                 @media #{$mobiles} {
                     font-size: $baseMeasure*1.5;
