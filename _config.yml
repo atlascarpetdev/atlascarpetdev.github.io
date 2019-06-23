@@ -1,10 +1,17 @@
-name: Atlas Carpet
+name: Atlas Discount Carpet
 description: High Quality Flooring at Discount Prices
 url:
 baseurl: ""
 permalink: /:title/
 favicon: /assets/img/favicon.ico
 social_image: /assets/img/social-image.png
+contact:
+  phone1: 310-539-4101
+  phone2: 310-539-6700
+address:
+  link: https://goo.gl/maps/ZrGYXWpLgcJwhK9cA
+  street: 2325 Pacific Coast Highway
+  cityStateZip: Lomita, CA 90717
 google_analytics:
   id:
 kramdown:

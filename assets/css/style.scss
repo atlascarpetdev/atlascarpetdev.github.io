@@ -42,8 +42,77 @@ body {
         font-weight: bold;
     }
 
-    #header {
-        @include banner('/assets/img/store/5.jpg');
+    .banner {
+        @include banner;
+    }
+
+    .headerWrap {
+        @include layoutDimensions;
+
+        .header {
+            background: $white;
+            border-bottom: 1px solid $grayMed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: $baseMeasure*.3125;
+
+            @media #{$mobiles} {
+                flex-direction: column;
+            }
+
+            .title {
+                font: {
+                    size: $baseMeasure*2;
+                    weight: bold;
+                }
+
+                @media #{$mobiles} {
+                    font-size: $baseMeasure*1.5;
+                }
+
+                a {
+                    color: $black;
+                    text-decoration: none;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: unset;
+                    }
+                }
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+
+                @media #{$mobiles} {
+                    margin-bottom: $baseMeasure/2;
+                }
+
+                li {
+                    margin-right: $baseMeasure/2;
+
+                    &:after {
+                        content: '•';
+                        margin-left: $baseMeasure/2;
+                    }
+
+                    &:last-child {
+                        &:after {
+                            content: '';
+                            margin-left: 0;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
     
     strong {
@@ -81,9 +150,7 @@ body {
 }
 
 #main {
-    max-width: 960px;
-    width: 90%;
-    margin: 0 auto;
+    @include layoutDimensions;
 
     h1,
     h2,
@@ -190,14 +257,20 @@ body {
             background-color: darken($brandColor,15%);
         }
     }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
-    #social {
+    .social {
         display: flex;
         flex-direction: row;
         margin: {
             bottom: $baseMeasure;
             top: $baseMeasure;
-        };
+        }
         
         a {
             outline: 0;

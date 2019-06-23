@@ -1,0 +1,10 @@
+<div class="headerWrap">
+    <div class="header">
+        <div class="title">
+            {% if page.title != 'home' %}<a href="/">{% endif %}
+                {{ site.name }}
+            {% if page.title != 'home' %}</a>{% endif %}
+        </div>
+        {% include nav.html %}
+    </div>
+</div>

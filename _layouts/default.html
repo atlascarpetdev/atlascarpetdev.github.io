@@ -11,14 +11,12 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="/assets/css/fslightbox.min.css" />
   </head>
   <body{% if page.title %} class="{{ page.title }}"{% endif %}>
-    <div id="header">
-      <span>
-        {{ site.name }}
-      </span>
-    </div>
+    {% include header.html %}
+    {% include banner.html path='/assets/img/store' image=page.image %}
     <div id="main" role="main" class="container">
       {{ content }}
-      {% include social.html %}
+      <hr />
+      {% include footer.html %}
     </div>
     {% include analytics.html %}
     <script src="/assets/js/fslightbox.min.js"></script>

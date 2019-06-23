@@ -1,0 +1,8 @@
+<ul class="nav">
+    {% assign pages = site.pages | sort: 'order' %}
+    {% for p in pages %}
+        {% if (p.title != 'home' and p.title != 'error' and p.title != blank) %}
+            <li><a class="{% if p.url == page.url %}is-active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+</div>

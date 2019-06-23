@@ -1,8 +1,13 @@
 @import "vars";
 
+@mixin layoutDimensions {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 // banner elements
-@mixin banner ($image) {
-    background: url($image) top center no-repeat;
+@mixin banner {
     background-size: cover;
     border-bottom: 1px solid $grayMed;
     box-shadow: inset 0 0 12px rgba(0,0,0,0.6);
