@@ -13,7 +13,7 @@ address:
   street: 2325 Pacific Coast Highway
   cityStateZip: Lomita, CA 90717
 google_analytics:
-  id:
+  id: UA-142572438-1
 kramdown:
   input: GFM
 sass:
