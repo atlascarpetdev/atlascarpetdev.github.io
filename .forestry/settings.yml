@@ -7,9 +7,6 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-- type: jekyll-posts
-  label: Posts
-  create: all
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: ''
