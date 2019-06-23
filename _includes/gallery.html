@@ -1,0 +1,21 @@
+<!--
+  Gallery include
+  - params:
+    - title {string}: gallery title to display
+    - path {string}: path to gallery image assets (must end without trailing slash)
+      - expects thumbnails directory to exist as a child of the parent path
+  - desc: capture thumbs path, scoping loop through static files to those matching updated thumbs path.
+-->
+{% capture thumbs_path %}{{ includes.path }}-thumbs{% endcapture %}
+<h5>{{ include.title }}</h5>
+<ul class="gallery">
+{% for image in site.static_files %}
+    {% if image.path contains thumbs_path %}
+        <li>
+            <a data-fslightbox="gallery" href="{{ include.path }}/{{ image.name }}">
+                <img src="{{ include.path }}-thumbs/{{ image.name }}" />
+            </a>
+        </li>
+    {% endif %}
+{% endfor %}
+</ul>

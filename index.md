@@ -63,6 +63,6 @@ Located on Pacific Coast Highway between Cypress Street and Pennsylvania Avenue
 
 <a class="button" href="https://www.yelp.com/biz/atlas-discount-carpet-lomita-3" title="See more testimonials on our Yelp page">Read more reviews</a>
 
-{% include galleryStore.html %}
+{% include gallery.html title="Store gallery" path="/assets/img/store" %}
 
 ---
