@@ -60,6 +60,10 @@ body {
 
             @media #{$mobiles} {
                 flex-direction: column;
+                
+                .phone {
+                    text-align: center;
+                }
             }
 
             .title {
