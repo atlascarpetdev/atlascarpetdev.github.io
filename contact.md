@@ -4,7 +4,6 @@ image: 8.jpg
 order: "4"
 layout: default
 permalink: "/contact.html"
-published: false
 
 ---
 {% include contact.html %}
